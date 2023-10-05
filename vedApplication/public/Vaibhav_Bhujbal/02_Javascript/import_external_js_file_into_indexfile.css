@@ -1,0 +1,18 @@
+ul{
+    list-style-type: none;
+    padding: 40px;
+    width: 400px;
+    margin: 20px auto;
+    background-color: #ccc;
+    border: 1px solid black;
+
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+
+}

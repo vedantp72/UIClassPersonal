@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+        .header{
+            /* height: 30px; */
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            position: fixed;
+            left: 10px;
+            right: 10px;
+            line-height: 40px;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        .mainContainer{
+            width: 200px;
+            overflow: auto;
+            border: 1px solid black;
+            margin-top: 10px;
+            /* text-align: center; */
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .block1{
+            background-color: green;
+        }
+        .block2{
+            background-color: yellow;
+        }
+        .block3{
+            background-color: blue;
+        }
+        .emptyBlock{
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        this is a fixed content
+    </div>
+    <div class="emptyBlock"></div>
+    <div class="mainContainer">
+        <div class="block block1" >block1</div>
+        <div class="block block2" >block2</div>
+        <div class="block block3" >block3</div>
+        <div class="block block1" >block1</div>
+        <div class="block block2" >block2</div>
+        <div class="block block3" >block3</div>
+        <div class="block block1" >block1</div>
+        <div class="block block2" >block2</div>
+        <div class="block block3" >block3</div>
+        <div class="block block1" >block1</div>
+        <div class="block block2" >block2</div>
+        <div class="block block3" >block3</div>
+        <div class="block block1" >block1</div>
+        <div class="block block2" >block2</div>
+        <div class="block block3" >block3</div>
+        <div class="block block1" >block1</div>
+        <div class="block block2" >block2</div>
+        <div class="block block3" >block3</div>
+        
+           </div>
+</body>
+</html>

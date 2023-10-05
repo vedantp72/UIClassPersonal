@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 470px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 20px auto;
+            text-align: center;
+            /* padding-top: 10%; */
+            /* box-sizing: border-box; */
+            background-image: url("https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_1280.jpg"), url("https://m.media-amazon.com/images/I/61+r3+JstZL.jpg"), url("https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+            
+            /* background-size: 100% 100%; */
+            /* background-repeat: no-repeat; */
+            background-size: 100px 100px, 200px 100px, 200px 150px;
+            background-repeat: no-repeat;
+            background-position: 10px 20px, bottom right , top right;
+            /* opacity: 0.3; */
+            background-color: rgba(10, 200, 30, 0.2);
+            
+        }
+        .gradients{
+            height: 500px;
+            width: 470px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 20px auto;
+            text-align: center; 
+            background-image: repeating-radial-gradient( red 10%, green 15%  );
+            
+        }
+        
+        /* .text{
+            height: 30px;
+            width: 200px;
+            position: absolute;
+            top: 100px;
+            left: 560px;
+            text-decoration: underline;
+            font-weight: bolder;
+            font-size: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">  
+        This is the div text
+
+    </div>
+    <!-- <div class="text">
+        This is the div text
+    </div> -->
+
+    <div class="gradients">
+
+    </div>
+</body>
+</html>

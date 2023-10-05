@@ -1,0 +1,23 @@
+If you're using the Microsoft Edge browser and the video autoplay is not working, it might be due to Edge's autoplay policies, which can restrict autoplay with sound. Here's how you can try to make it work in Edge:
+
+1. **Check Autoplay Settings**:
+   - Open Microsoft Edge.
+   - Click the three horizontal dots (ellipsis) in the upper-right corner to open the menu.
+   - Go to "Settings."
+   - Scroll down to "Site permissions" and click on "Media autoplay."
+   - Change the option to "Allow" or "Limit."
+
+2. **Muted Autoplay**: If you want to ensure autoplay works, even with sound muted, you can add the `muted` attribute to the `<video>` element like this:
+
+```html
+<video autoplay muted controls>
+    <source src="your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+```
+
+The `muted` attribute will prevent sound from playing automatically but will allow the video to start playing immediately.
+
+3. **Test with a Local File**: Sometimes, autoplay restrictions are stricter for remote videos. You can try testing autoplay with a local video file to see if it works as expected.
+
+If none of these solutions work, it's possible that the Edge browser's autoplay policies have changed since my last knowledge update in September 2021. In such cases, you may need to consult the latest documentation or community forums related to Microsoft Edge for the most up-to-date information on autoplay policies and how to enable autoplay for videos in your specific Edge version.

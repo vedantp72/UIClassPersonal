@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   var isChromeBrowser = false;
+    //   var  isFirefox = false;
+    //     // navigator object 
+    //     if(navigator.userAgent.match("Chrome/")!=null){ // it is fully case sensitive so that be careful with this when you do coding 
+            //// we use here .match which find the value between give array and object
+    //         isChromeBrowser = true;
+    //     };
+    //     if(navigator.userAgent.match("Firefox/")!=null){
+    //         isFirefox = true;
+    //     };
+    //     console.log("isChromeBrowser -->" + isChromeBrowser); // it is fully case sensitive so that be careful with this when you do coding
+    //     console.log("isFirefox -->"+ isFirefox);
+       
+        
+    navigator.geolocation.getCurrentPosition((point)=>{
+        console.log(point); 
+    })
+    </script>
+</body>
+</html>

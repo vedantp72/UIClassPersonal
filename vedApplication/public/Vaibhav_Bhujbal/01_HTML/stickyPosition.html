@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        .block1{
+            background-color: green;
+        }
+        .block2{
+            background-color: yellow;
+        }
+        .block3{
+            background-color: aqua;
+        }
+        .block4{
+            background-color: blue ;
+            left: 300px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            bottom: 10px; 
+            /* We can take this part as external div  */
+        }
+        .mainContainer{
+            width: 100%;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            height: 500px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block4"></div>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block2"></div>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block2"></div>
+    <div class="block block1"></div>
+    <div class="block block2"></div>
+    <div class="block block3"></div>
+    <div class="block block2"></div>
+    <div class="stickyDiv">     
+    </div>
+</div>
+</body>
+</html>

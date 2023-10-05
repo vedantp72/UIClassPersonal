@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 300px;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: 100px auto;
+            /* transform: rotate(360deg); by using this property we can rotate any container */
+            text-align: center;  
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        this is content
+    </div>
+
+    <!-- now we want to keep on this rotation so we can use following function  -->
+<script>
+    var degCount = 0
+    var containerKeepOnRotating = ()=>{
+            degCount++;
+        if(degCount == 360){
+            degCount = 0
+        }
+        var degvalueWithMs = degCount + "deg"; // here we
+        document.querySelector(".container").style.transform =  "rotate(" + degvalueWithMs + ")"
+    }
+        setInterval(()=>{
+         containerKeepOnRotating();
+        }, 100)
+    
+</script>
+</body>
+</html>

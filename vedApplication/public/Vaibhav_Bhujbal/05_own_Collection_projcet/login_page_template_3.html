@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 50px auto;
+            padding-top: 50px;
+            border-radius: 30px;
+        }
+        .container img{
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            position: absolute;
+            top: -7px;
+            left: 585px;
+        }
+        .container li{
+            list-style-type: none;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        .container li input{
+            height: 30px;
+            padding: 10px;
+            width: 230px;
+            margin: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 15px;
+        }
+        .container li input:hover{
+            background-color: aqua;
+            /* cursor: pointer; */
+        }
+        .container li input::placeholder{
+            font-family: cursive;
+            font-weight: bolder;
+            color: black;
+        }
+        .container li input:focus::placeholder{
+            color: blue;
+        }
+        .container li input:focus{
+            background-color: yellow;
+        }
+        .container li input:focus::target-text{
+            font-size: 30px;
+        }
+        .span1{
+            display: inline-block;
+            float: left;
+        }
+        .span2{
+            display: inline-block;
+            float: right;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="c:\Users\Vaibhav\OneDrive\Desktop\image2.png" alt="">
+        <li>
+            <input type="email" placeholder="Email ID...">
+        </li>
+        <li>
+            <input type="password" placeholder="Password....">
+        </li>
+        <li>
+            <span class="span1">Remember Me</span>
+            <span class="span2">Forgot Password</span>
+        </li>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- here we include mini.js here mini is predefinded keyword -->
+</head>
+<body>
+    <table cellpadding="10px" cellspacing="10px" border="1px solid black">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Country</td>
+                <td>Launch Date</td>
+                <td>Mass</td>
+                <td>Launcher</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <input type="button" value="Get API Data" onclick="getapidata()">
+    <script>
+/*var getapidata = ()=>{
+// Make a request for a user with a given ID
+axios.get("https://isro.vercel.app/api/customer_satellites")
+  .then(function (response){
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error){
+    // handle error
+    console.log(error);
+  })
+  .finally(function () {
+    // always executed
+  });
+}
+*/
+var getapidata = ()=>{
+axios.get("https://isro.vercel.app/api/customer_satellites")
+  .then(function (response){
+    // handle success
+    // console.log(response);
+    // we want api data on ui so from now we can do something check below
+    rendorDataToTable(response.data.customer_satellites)
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+  .finally(function (){
+    // always executed
+  });
+
+}
+var rendorDataToTable = (data)=>{
+ data.forEach((item)=>{
+  var trTag = $("<tr/>");
+
+  var td1 = $("<td/>").text(item.id);
+      trTag.append(td1);
+
+  var td2 = $("<td/>").text(item.launch_date);
+      trTag.append(td2);
+
+  var td3 = $("<td/>").text(item.launcher);
+      trTag.append(td3);
+
+  var td4 = $("<td/>").text(item.mass);
+      trTag.append(td4);
+ });
+}
+    </script>
+    
+    
+</body>
+</html>

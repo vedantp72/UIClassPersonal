@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="button" onclick="getdatafrom_api()" value="click here">
+<!-- <script src="jquery.js"></script> -->
+
+    </div>
+    <script>
+        //  var getsateliteinfo = ()=>{
+        // //     // var dataAPI = "https://isro.vercel.app/api/customer_satellites";
+
+        //     fetch("https://isro.vercel.app/api/launchers").then((response)=>response.json()).then((data)=>{console.log(data)});
+        // }
+    
+        // what is the method of fetch 
+        // 
+
+    // first we create a variable 
+
+    // var getapiinfo = ()=>{
+    //     //  var dataApi = /*here we can give a source of url or webservice */ "https://isro.vercel.app/api/centres";
+    //     // fetch(dataApi).then((response)=>response.json()).then((data)=>{console.log(data)});
+
+    //     // fetch(dataApi).then((temp)=>temp.json()).then((abc)=>{console.log(abc)});
+    //     fetch ("https://isro.vercel.app/api/centres").then((data)=>data.json()).then((abc)=>{console.log(abc)});
+    // }
+    // fetch syntax is 
+
+    // Now i got the idea of how fetch method work 
+    // fetch ("source of api").then((temp)=>{data.json()}).then((abc)=>{console.log(abc)});
+
+    // fetch ("source of api").then((data)=>{data.json()}).then((abc)=>{console.log(abc)});
+
+    // now we want to practice with jquery 
+
+    // var getapidatafromjquery =()=>{
+    //     var dataAPI = "https://isro.vercel.app/api/customer_satellites";
+    //     $.ajax({
+    //     url: "https://isro.vercel.app/api/centres",
+    //     method:"GET",
+    //     dataType : "JSON",
+    //     data:{},
+    //     success:(response)=>{
+    //         console.log("its success")
+    //     },
+    //     error:()=>{
+    //         console.log("error while communicating")
+    //     }
+    //     })
+    // }
+    // var getapidatafromjquery =()=>{
+    //     $.ajax({
+    //         url: "https://isro.vercel.app/api/centres",
+    //         method : "GET",
+    //         method : "GET",
+    //         dataType : "JSON",
+    //         data : {},
+    //         success : (response)=>{
+    //             console.log("its success")
+    //         },
+    //         error:()=>{
+    //             console.log("error while communicating");
+    //         }
+    //     })
+    // }
+
+    // var getapidatafromJqueryq = ()=>{
+    //     $.ajax ({
+    //         url : "https://isro.vercel.app/api/launchers",
+    //         method : "GET",
+    //         dataType : "JSON",
+    //         data : {},
+    //         success : (response)=>{
+    //             console.log("its success")
+    //             console.log(response);
+    //         },
+    //         error : ()=>{
+    //             console.log("error while communicate with server ");
+    //         }
+    //     })
+    // }
+    
+    // communicating with server via api
+
+    // var getapidata = ()=>{
+    //     // var dataAPI = "https://isro.vercel.app/api/spacecrafts";
+
+    //     // fetch("https://isro.vercel.app/api/spacecrafts").then((temp)=>{temp.json()}).then((data)=>{console.log(data)});
+
+    //     fetch ("https://isro.vercel.app/api/centres").then((data)=>{data.json()}).then((abc)=>{console.log(abc)});
+    // }
+
+
+// var getdatafromapi = ()=>{
+    
+//     fetch("https://isro.vercel.app/api/launchers").then((response)=>response.json()).then((data)=>{console.log(data)});
+// }
+// var getdatafromisroapi = ()=>{
+//     fetch("https://isro.vercel.app/api/customer_satellites").then((temp)=>temp.json()).then((data)=>{console.log(data)});
+// }
+
+var getdatafrom_api = ()=>{
+    
+    fetch("https://isro.vercel.app/api/customer_satellites").then((tempkey)=>tempkey.json()).then((tempvar)=>{console.log(tempvar)});
+}
+    </script> 
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: auto;
+        }
+        .classChanges{
+            height: 100px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: brown;
+            margin: auto;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <input type="button" value="Get Change " onclick="abc()">
+    <div id="fdiv" class="container"></div> 
+    <script>
+         var abc =()=>{
+            $("#fdiv").addClass("classChanges"); // actually it works 
+            }
+
+    </script>
+</body>
+</html>

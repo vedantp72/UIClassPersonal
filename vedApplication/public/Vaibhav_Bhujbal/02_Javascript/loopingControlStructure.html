@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // WAP to display the values between 1 to 100;
+
+        // for(var i= 1; i<=100; i++){
+        //     console.log(i);
+        // }
+
+        // WAP to display values between 55 to 21
+
+        // for(var i=55; i>=21; i--){
+        //     console.log(i);
+        // }
+
+        //WAP to read number from the user and display the table of a given number within given range
+        // var ntable = prompt("Enter the number which you want to table");
+        //     ntable = parseInt(ntable);
+
+        // // now we want table of that number 
+
+        // for(i=1; i<=10; i++){
+        //     var table = (ntable*i);
+        //     console.log(table);
+        // }
+
+        // WAP to display odd number between 1 to 100;
+
+        // var fnumber = 1;
+        // var enumber = 100;
+
+        // for(var i= fnumber; i<=enumber; i++ ){
+        //     if(i%2!==0){
+        //         console.log(i);
+        //     }
+        // }
+
+        // // now we want to display all even number between 1 to 100;
+
+        // for(var i=1; i<=100; i++){
+        //     if(i%2==0){
+        //         console.log(i);
+        //     }
+        // }
+        // now we want sum of all odd numbers 
+        
+        // var count =0;
+        // for(var i=1; i<=100; i++){
+        //     if(i%2==0){
+        //         count++;
+        //     }
+        // }
+        // console.log("There are "+ count + " even number between 1 to 100 ");
+        // // now we want the sum of all the even number 
+
+        
+        // var sum =0;
+        // for(var i=1; i<=100; i++){
+        //     if(i%2!==0){
+        //        var getSum =  sum+=i;
+        //     }
+        // }
+        // console.log("The sum of odd number between 1 to 100 is " + getSum);
+
+        // // prime number 
+
+        // // prime number means those number which is divisible by that number 
+        // number = 5;
+        // number/1;
+        // number/2;
+        // number/3;
+        // number/4;
+        // number/5;
+        for(i=1; i<=100; i++){
+        var count = 0;
+            for(j=1; j<=i; j++ ){
+                var remaider = i%j;
+                if(remaider==0){
+                    count++
+                }
+            }
+            if(count==2){
+                console.log(i);
+            }
+        }
+
+    </script>
+</body>
+</html>

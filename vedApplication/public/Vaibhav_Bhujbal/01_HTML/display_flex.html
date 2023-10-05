@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 50px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            background-color: aqua;
+            /* transform: rotateX(180deg);  */
+            /* by using this property we can rotate our container at any side */
+        }
+    </style>
+</head>
+<body>
+    <div class="container" onclick="">
+        Content
+    </div>
+    <script>
+        var degValue = 0;
+    var animateElement_rotate = ()=>{
+        degValue++;
+        if(degValue==360){
+            degValue = 0;
+        }
+
+        var degValueWithMs = degValue + "deg";
+
+        document.querySelector(".container").style.transform = "rotateY(" + degValueWithMs + ")";
+    }
+    setInterval(()=>{
+        animateElement_rotate();
+    }, 1);
+
+
+    </script>
+</body>
+</html>

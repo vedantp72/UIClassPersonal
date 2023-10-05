@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <table border="1px solid black" cellpadding="10px" cellspacing="10px">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+<input type="button" value="Get Data From API" onclick="getDataFromAPI()">
+    <script>
+        var getDataFromAPI = ()=>{
+
+            axios.get("https://isro.vercel.app/api/spacecrafts")
+            .then(function(response){
+                console.log(response);
+                rendorDataToUI(response.data.spacecrafts) // here we pass step by step data
+            })
+            .catch(function (error){
+                console.log(error);
+            })
+            .finally(function(){
+            });
+        }
+       var rendorDataToUI = (data)=>{
+        data.forEach((data)=>{
+            var trTag = $("<tr/>");
+
+            var td1 = $("<td/>").text(data.id);
+                trTag.append(td1);
+            var td2 = $("<td/>").text(data.name);
+                trTag.append(td2);
+            $("tbody").append(trTag);
+        });
+       }
+    </script>
+</body>
+</html>

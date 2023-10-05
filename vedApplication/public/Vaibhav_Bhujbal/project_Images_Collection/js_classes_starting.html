@@ -1,0 +1,370 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+// var abc = {
+//     name : "vaibhav",
+//     age : 20 
+// }
+        
+// var totalsalary = 2000;
+
+// var msg = "hey mr. " + abc.name + " with age " + abc.age + " with salary is " + totalsalary;
+// console.log(msg);
+// // instead of this we can use stringinterpolization 
+
+// // which is as follows
+
+// var msg2 = `hey mr. ${abc.name} with age ${abc.age} with salary is ${totalsalary}`;
+// console.log(msg2);
+// // it works really 
+
+// var abc = {
+
+
+//     name : "vaibhav",
+//     age : 23,
+//     gender : "male",
+//     marks : [23,45,67,50],
+//     total : 0,
+//     displaystudentdetails(){
+//         console.log("Student name is " + this.name);
+//         console.log("Student age is " + this.age);
+//         console.log("Student gender is " + this.gender);
+//         this.gettotalavg()
+//         console.log("The total avg is " + this.total)
+//     },
+//     // gettotalavg(){
+//     //     this.total = 0;
+//     //     for (var i=0; i<this.marks.length ; i++){
+//     //         this.total = this.total + this.marks[i];
+//     //     }
+//     // }
+//     gettotalavg(){
+       
+//         for (var i=0; i<this.marks.length ; i++){
+//             this.total = this.total + this.marks[i];
+//         }
+//     }
+//     // we can use as like this 
+
+// }
+// abc.displaystudentdetails();
+
+
+// class  xyz {
+// constructor(data){
+//     this.name = data.sname,
+//     this.age =data.sage,
+//     this.gender =data.sgender,
+//     this.marks =data.marks,
+//     this.total = 0
+//     }
+// displaystudentdetails(){
+//         console.log("Student name is " + this.name);
+//         console.log("Student age is " + this.age);
+//         console.log("Student gender is " + this.gender);
+//         this.gettotalavg();
+//         console.log("The total avg is " + this.total)
+//     }
+//     // gettotalavg(){
+//     //     this.total = 0;
+//     //     for (var i=0; i<this.marks.length ; i++){
+//     //         this.total = this.total + this.marks[i];
+//     //     }
+//     // }
+//     gettotalavg(){
+       
+//         for (var i=0; i<this.marks.length ; i++){
+//             this.total = this.total + this.marks[i];
+//         }
+//     }
+// }
+// var s1 = new xyz({sname:"vaibhav", sage:23, sgender:"male", marks : [89,89,89,89]});
+// console.log(s1);
+
+// var s2 = new xyz({sname:"Nikhil", sage:20, sgender:"male", marks : [90,90,90,90]});
+// console.log(s2);
+
+// var s3 = new xyz({sname:"Payal", sage:21, sgender:"female", marks : [91,91,91,91]});
+// console.log(s3);
+
+
+/////////////////////////////////////////////////////////////////////////////
+//class starting
+
+// var abc1 = {
+//     name : "vaibhav",
+//     age : 20,
+//     gender : "Male",
+//     marks : [90,90,90,90],
+
+//     getstudentdetails(){ // this will change by ECMA 6 getstudendtdetails = ()=>{.....} this is how first we type 
+//         console.log("student name is " + this.name);
+//         console.log("student age is " + this.age);
+//         console.log("student gender is " + this.gender);
+//         this.getavg();
+//         console.log("The total marks is " + this.total);
+//     },
+//     total : 0,
+//     getavg(){
+//         for(var i=0; i<this.marks.length; i++){
+//             this.total = this.total + this.marks[i];
+//         }
+//     }
+// }
+// var abc2 = {
+//     name : "Payal",
+//     age : 21,
+//     gender : "Female",
+//     marks : [80,80,80,80],
+
+//     getstudentdetails(){ // this will change by ECMA 6 getstudendtdetails = ()=>{.....} this is how first we type 
+//         console.log("student name is " + this.name);
+//         console.log("student age is " + this.age);
+//         console.log("student gender is " + this.gender);
+//         this.getavg();
+//         console.log("The total marks is " + this.total);
+//     },
+//     total : 0,
+//     getavg(){
+//         for(var i=0; i<this.marks.length; i++){
+//             this.total = this.total + this.marks[i];
+//         }
+//     }
+// }
+// var abc3 = {
+//     name : "Nikhil",
+//     age : 19,
+//     gender : "Male",
+//     marks : [99,89,99,99],
+
+//     getstudentdetails(){ // this will change by ECMA 6 getstudendtdetails = ()=>{.....} this is how first we type 
+//         console.log("student name is " + this.name);
+//         console.log("student age is " + this.age);
+//         console.log("student gender is " + this.gender);
+//         this.getavg();
+//         console.log("The total marks is " + this.total);
+//     },
+//     total : 0,
+//     getavg(){
+//         for(var i=0; i<this.marks.length; i++){
+//             this.total = this.total + this.marks[i];
+//         }
+        
+//     }
+// }
+
+
+// abc1.getstudentdetails();
+// abc2.getstudentdetails();
+// abc3.getstudentdetails(); // this is repetition of code which is not recommended 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// now if we want to sum changes in that data as like we want to add 10 marks in all students total marks so we need to write manualy in all student data so what is the best solution for that 
+
+
+class abc { 
+    // first of all we want to copy all the repetative data rather than the dynamic data such as name, age , gender and marks
+// then we put here that dynamic data 
+// then we put constructor here 
+// put dynacmic data into constructor
+// in this program class, counstructor and this is a keyword
+
+constructor(data){ // constructor is a predefined method what javascript is supporting underwhich we can put userdefined values
+    // in javascript we can put only one constructor into a class
+    this.name = data.sname; // when we put this variable it will be class variable other than its not a class variable
+    this.age = data.sage;
+    this.gender = data.sgender;
+    this.marks = data.marks // we should never hardcode the data withing the constructor
+
+}
+    getstudentdetails(){ // this will change by ECMA 6 getstudendtdetails = ()=>{.....} this is how first we type 
+        console.log("student name is " + this.name);
+        console.log("student age is " + this.age);
+        console.log("student gender is " + this.gender);
+        this.getavg();
+        console.log("The total marks is " + this.total);
+    }
+    total = 0;
+    
+    getavg(){
+        for(var i=0; i<this.marks.length; i++){
+            this.total = this.total + this.marks[i];
+        }
+        
+    }
+}
+
+var mnp = new abc({sname : "vaibhav", sage : 23, sgender:"male" , marks :[20,100,20]}); 
+mnp.getstudentdetails();
+// new is only predefined keyword using which we could able to create instance (objects) for the  particular class
+console.log(mnp); // result show class abc has some property and also behavior like getstudentdetails and getavg 
+// now what we do if we want some more student data 
+var mnp2 = new abc({sname : "Payal", sage : 21, sgender:"female" , marks :[100,100,100]}); // when we create new then it will automaticaly construct memory to the constructor 
+mnp2.getstudentdetails();
+console.log(mnp2);
+
+var mnp3 = new abc({sname : "vaibhav", sage : 23, sgender:"male" , marks :[100,80,90]});
+console.log(mnp3);
+
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var abc1 = {
+            name : "Payal",
+            age : 20,
+            gender : "female",
+            marks : [90,90,90,90],
+            total : 0,
+            getstudentdetails(){
+                console.log("student name is " + abc1.name);
+                console.log("student age is " + abc1.age);
+                console.log("Student gender is " + abc1.gender);
+                console.log("First subject marks is " + abc1.marks[0]);
+                console.log("Second subject marks is " + abc1.marks[1]);
+                console.log("Third subject marks is " + abc1.marks[2]);
+                abc1.getavg();
+                console.log("The total of marks is " + abc1.total);
+            },
+            getavg(){
+                for(var i=0; i<abc1.marks.length; i++){
+                    abc1.total = abc1.total + abc1.marks[i];
+                }
+            }
+        }
+        var abc2 = {
+            name : "vaibhav",
+            age : 20,
+            gender : "male",
+            marks : [90,90,90,90],
+            total : 0,
+            getstudentdetails(){
+                console.log("student name is " + abc2.name);
+                console.log("student age is " + abc2.age);
+                console.log("Student gender is " + abc2.gender);
+                console.log("First subject marks is " + abc2.marks[0]);
+                console.log("Second subject marks is " + abc2.marks[1]) ;
+                console.log("Third subject marks is " + abc2.marks[2]);
+                abc2.getavg();
+                console.log("The total of marks is " + abc2.total);
+            },
+            getavg(){
+                for(var i=0; i<abc2.marks.length; i++){
+                    abc2.total = abc2.total + abc2.marks[i];
+                }
+            }
+        }
+        var abc3 = {
+            name : "Nikhil",
+            age : 20,
+            gender : "male",
+            marks : [90,90,90,90],
+            total : 0,
+            getstudentdetails(){
+                console.log("student name is " + ab3.name);
+                console.log("student age is " + abc3.age);
+                console.log("Student gender is " + abc3.gender);
+                console.log("First subject marks is " + abc3.marks[0]);
+                console.log("Second subject marks is " + abc3.marks[1]) ;
+                console.log("Third subject marks is " + abc3.marks[2]);
+                abc3.getavg();
+                console.log("The total of marks is " + abc3.total);
+            },
+            getavg(){
+                for(var i=0; i<abc3.marks.length; i++){
+                    abc3.total = abc3.total + abc3.marks[i];
+                }
+            }
+        }
+       
+
+        class mnp {
+
+            constructor(data){
+            this.name = data.sage;
+            this.age = data.sname;
+            this.gender = data.sgender;
+           this.marks = data.samarks;
+            this.total = 0;
+        }
+            getstudentdetails(){
+                console.log("student name is " + this.name);
+                console.log("student age is " + this.age);
+                console.log("Student gender is " + this.gender);
+                console.log("First subject marks is " + this.marks[0]);
+                console.log("Second subject marks is " + this.marks[1]);
+                console.log("Third subject marks is " + this.marks[2]);
+                this.getavg();
+                console.log("The total of marks is " + this.total);
+            }
+            getavg(){
+                for(var i=0; i<this.marks.length; i++){
+                    this.total = this.total + this.marks[i];
+                }
+            }
+        }
+    
+     var abc1 = new mnp({sname : "vaibhav" , sage : 23, sgender : "male" , samarks: [20,20,20,20]});
+    abc1.getstudentdetails();
+     console.log(abc1);
+
+     var abc2 = new mnp({sname : "Payal" , sage : 23, sgender : "female" , samarks: [100,100,100,100]});
+     console.log(abc2);
+
+     var abc3 = new mnp({sname : "Nikhil" , sage : 20, sgender : "male" , samarks: [30,30,30,30]});
+     console.log(abc3);
+    </script>
+</body>
+</html> -->
+
+<!-- in below code we can create something new in our program -->
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="demo">
+
+    </div>
+    <script>
+class xyz {
+    // we should create constructor is mandatory when we create class
+    constructor(name,age) {
+        this.name = name;
+        this.age = age;
+        
+    }
+    getstudentDetails(){
+          this.pqr = "This is vaibhav";
+        }
+}
+var mpn = new xyz(20,"vaibhav");
+console.log(mpn); // we can also create such type of data or we input such type of data 
+
+document.getElementById("demo").innerHTML = mpn.getstudentDetails;
+
+
+
+    </script>
+</body>
+</html>

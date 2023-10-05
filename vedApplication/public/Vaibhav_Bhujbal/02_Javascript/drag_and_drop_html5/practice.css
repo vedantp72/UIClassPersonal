@@ -1,0 +1,21 @@
+.container{
+    height: 500px;
+    width: 600px;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+}
+img{
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.afterGettingImage{
+    border: 1px dotted orange;
+
+}
+img:hover{
+    transform: scale(2,2);
+    transition: transform 2sec;
+}

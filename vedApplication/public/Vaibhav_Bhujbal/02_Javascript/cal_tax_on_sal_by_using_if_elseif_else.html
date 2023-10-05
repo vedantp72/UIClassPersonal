@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var eName   = prompt("Enter employee name ");
+        var eAge    = prompt("Enter employee age");
+        var eGender = prompt("Enter Emplyee gender");
+        var bSalary = prompt("Enter basic salary ");
+            bSalary = parseInt(bSalary);
+        var pf      = (13/100)*bSalary;
+        var hra     = (24/100)*bSalary;
+        var tSalary = (bSalary + pf + hra);
+        var taxPercent;
+
+        console.log("Employee Details is ")
+
+        if (eGender == "male"){
+            console.log("Mr." + eName + "hra is" + hra);
+            console.log("Mr." + eName + "pf is" + pf);
+            console.log("Mr." + eName + "total salary is" + tSalary);
+
+
+            if(tSalary > 300000){
+                taxPercent = (15/100)*tSalary;
+                taxPercent = parseInt(taxPercent);
+                console.log("The tax amount is " + taxPercent);
+            }else if(tSalary > 200000){
+                taxPercent = (10/100)*tSalary;
+                taxPercent = parseInt(taxPercent);
+                console.log("The tax amount is " + taxPercent);
+
+            }
+            else if(tSalary > 100000){
+                taxPercent = (5/100)*tSalary;
+                taxPercent = parseInt(taxPercent);
+                console.log("The tax amount is " + taxPercent);
+
+            }else{
+                console.log("You don't need to pay tax");
+            }
+        }
+
+        if (eGender == "female"){
+            console.log("Your gender is " + eGender)
+            if(tSalary > 300000){
+                taxPercent = (10*tSalary/100);
+                taxPercent = parseInt(taxPercent);
+                console.log("The tax amount is " + taxPercent);
+            }else if(tSalary > 200000){
+                taxPercent = (5/100)*tSalary;
+                taxPercent = parseInt(taxPercent);
+                console.log("The tax amount is " + taxPercent);
+
+            }else{
+                console.log("You don't need to pay tax");
+            }
+        }
+        
+    </script>
+</body>
+</html>

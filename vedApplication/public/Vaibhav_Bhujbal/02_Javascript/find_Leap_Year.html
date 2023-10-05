@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year) {
+  // Leap years are divisible by 4
+  if (year % 4 === 0) {
+  2000 %100 % 100  //   0 != 0
+    // But not divisible by 100 unless also divisible by 400
+    if (year % 100 !== 0 || (year % 100 === 0 && year % 400 === 0)) {
+      return true;
+    }
+  }
+  return false;
+}
+// Example usage:
+var yearToCheck = prompt("Enter the leap year");
+    yearToCheck = parseInt(yearToCheck);
+if (isLeapYear(yearToCheck)) {
+  console.log(yearToCheck + " is a leap year.");
+} else {
+  console.log(yearToCheck + " is not a leap year.");
+}
+    </script>
+</body>
+</html>

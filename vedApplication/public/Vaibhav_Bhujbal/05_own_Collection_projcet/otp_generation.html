@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .otpBlock{
+            height: 20px;
+            width: 100px;
+            border: 1px solid black;
+            background-color: azure;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="Generate OTP " onclick="getRandomNumber()">
+    <div class="otpBlock" >
+
+    </div>
+
+    <script>
+
+        // Recursive function :
+                            // calling the same method within the same method we call it as a Recursive function 
+        var maxlength = 9; // we gave maximum length here // we can give any value here 
+
+        // 4 we gave otp length 
+        var otplength = 1; 
+        var otpvalue = ''; // because we want to append these value thats why otpvalue = ' ' generate 
+        var getRandomNumber = ()=>{ // we create a function here 
+            var randomNumber = Math.random()*maxlength; ///1 Math.Random() is a method which give us random number between 0 and 1
+            //2  we do here multiply maxlength to math.random because we want random number between 0 and 9
+
+            // 3 now we want to parseint these decimal value so we can use Math.floor methd 
+
+            randomNumber = Math.floor(randomNumber);
+            otpvalue += randomNumber; // it do the 1234 as like structure
+            ////////////////////////////////////////////////////////////
+            if(otpvalue.length < otplength){ 
+                getRandomNumber(); // function calling in function is known as recursive function 
+            }else{
+                document.querySelector(".otpBlock").innerHTML = otpvalue; // we should write otpvalue as like otpvalue if we put "otpvalue" in then it takes as string
+                otpvalue = '';
+            } 
+            /////////////////////////////////////////////////////////////
+            //rather than above we can use the alternative way 
+            // we call randomnumber 5 times
+            // we gave command to print the randomNumber here{}
+        }
+        getRandomNumber();
+        // console.log(otpvalue); // we call function here 
+        // we get random number 
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // he takes an array 
+        // now we want to ranom characters from given array 
+        // 
+
+        
+        // var samplearray = ["A", "B", "C", "D", "E", "F"];
+        // var randomchar = Math.random()*samplearray.length;
+        //     randomchar = Math.floor(randomchar);
+        // console.log(samplearray[randomchar]); 
+        
+        
+
+        // we can find the random character in given array 
+
+        // but what if we want to random character for captcha generation 
+        // it includes upper case letters and lower case letters so we can generate
+
+
+        var abc ="AAllo World";
+        console.log(abc.charCodeAt(1));  // this is method which is used to find the ascii value 
+
+        console.log(String.fromCharCode(65)); // this is method which is used to find the value of character number which is given in
+                                        
+
+
+
+        // we want to give range for characters
+
+        var maximumandminimum = (max,min)=>{
+            var randomnumber =Math.floor(Math.random()*(max-min))+min; //
+            console.log(randomnumber); // this is method which is used to find the value of character
+           console.log(String.fromCharCode(randomnumber));
+        }
+        
+           maximumandminimum(65,90); // this is the program for printing the maximum and minimum values
+
+           
+
+    </script> 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+                height: 50px;
+                width: 100px;
+                margin: auto;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" name="" id="" value="get Capthca" onclick="getcaptchavalue()">
+    <div id="captchacontainer" class="container" >
+
+    </div>
+    <script>
+        
+        // we want to give range for characters
+
+
+        var getrandomnumber   = ()=>{
+            var randomnumber = Math.random()*9;
+                randomnumber = Math.floor(randomnumber);
+            return randomnumber;
+        }
+
+        var maximumandminimum = (max,min)=>{
+            var givenRangeRandomNumber =Math.floor(Math.random()*(max-min))+min; //
+         // this is method which is used to find the value of character
+            return givenRangeRandomNumber; //
+        }
+        
+        //    maximumandminimum(65,90); // this is the program for printing the maximum and minimum values
+
+            
+
+           var getRandomUpperCaseChar = ()=>{
+            var randomnUpperCaseChar = maximumandminimum(65,90);
+            var uppercaseChar = String.fromCharCode(givenRangeRandomNumber);
+            return uppercaseChar;
+           }
+
+          var  getRandomLowerCaseChar = () =>{
+            var lowercaseChar = maximumandminimum(90,122);
+            var lowercaseChar = String.fromCharCode(givenRangeRandomNumber);
+            return lowercaseChar;
+
+          }
+
+           var getcaptchavalue = ()=>{
+            var captchavalue = '';
+             captchavalue =getRandomUpperCaseChar() + getRandomUpperCaseChar() + getrandomnumber() + getRandomLowerCaseChar() + getrandomnumber();
+            document.querySelector("#captchacontainer").innerHTML = captchavalue;
+
+           }
+
+    </script> 
+</body>
+</html>

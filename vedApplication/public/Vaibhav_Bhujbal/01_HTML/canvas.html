@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        canvas{
+            height: 500px;
+            width: 400px;
+            border: 1px solid black;
+            margin:20 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas"> 
+        <!-- every time we need to put canvas object into canvas tag  -->
+
+    </canvas>
+    <script>
+        var context = document.querySelector("#myCanvas").getContext("2d"); // here context is a userDefined variable
+        // using this context object we are going to draw a object on canvas container
+        // context object behaves like marker on canvas object
+
+        context.moveTo(0, 0);
+            context.lineTo(180, 30);
+            context.lineTo(0, 20);
+
+            context.stroke();
+
+            ctx.fillStyle = 'red'; //background color
+            //ctx.fillRect(20, 20, 100, 120); 
+            ctx.font = "30px Arial";
+            //ctx.fillText("Hello World", 10, 50);
+            ctx.strokeText("Hello World", 10, 50);
+    </script>
+</body>
+</html>

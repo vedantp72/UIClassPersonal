@@ -1,0 +1,26 @@
+.container{
+    width: 500px;
+    margin: 10px auto;
+}
+input[type=text]{
+    height: 40px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+.filterList{
+    margin: auto;
+    width: 375px;
+    margin-left: 11px;
+}
+.filterList div{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    width: 100%;  
+}
+.filterList div:hover{
+    background-color: aqua;
+    cursor: pointer;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js"></script>
+<!-- we use this for theme and password -->
+    <style>
+        ul{ 
+            width: 500px;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px auto;
+            background-color: white;
+        }
+        li{
+            list-style-type: none;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 20px;
+        }
+        .detailsBlock{
+            display: none;
+            text-align: center;
+            color: greeen;
+            font-size: 20px;
+        }
+        .invalidData{
+            text-align: center;
+            color: red;
+            display: none;
+        }
+        .themeChooser{
+            text-align:right;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="themeChooser">
+        Select Theme : 
+        <!-- <select id="userTheme" onchange="applyTheme()">
+            <option value="red">Red</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="blue">Blue</option>
+
+        </select> -->
+        <input type="color" id="userTheme" onchange="applyTheme()" >
+    </div>
+    <ul class="loginBlock">
+        <li>
+            Enter User Name : <input type="text" id="username">
+        </li>
+        <li>
+            Enter Password : <input type="password" id="userpassword">
+        </li>
+        <li>
+            Enter Age : <input type="number" id="userAge">
+        </li>
+        <li>
+            <input type="checkbox" id="userOption">Rmember my Credentials
+        </li>
+        <li>
+            <input type="button" value="Login" onclick="loginUser()" >
+        </li>
+        <li class="invalidData">
+            Invalid Credentials 
+        </li>
+    </ul>
+    <div class="detailsBlock">
+        Details will be shown here
+    </div>
+</body>
+</html>

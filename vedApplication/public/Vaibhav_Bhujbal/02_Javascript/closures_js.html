@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     // we want simple structure of closures in javascript
+
+    //     // closure is for secure data 
+    //     // we canot access data from closures easily so closures can be higly securesd 
+    //     // we c
+    //    function abc(){ // this is one type of function  // we can declare a function here 
+    //         // var a=10;
+    //     console.log("This is vaibhav"); // we can do some activity with function 
+    //     }
+    //     abc(); // we can call here functions 
+
+    //     var abc = function abc(){
+    //         console.log("This is from another variable type of fuction ");
+    //     }
+
+    //     abc();
+    //     var abc = ()=>{
+    //         var p = 9;
+    //         console.log("This coming from an arrow function");
+    //     }
+
+    //    abc();
+    //     // console.log("the value of p is " + );
+
+
+
+    //     (()=>{
+    //         var a = 1;
+    //         console.log("I am from closures");
+    //         console.log(a); // it is accessible 
+
+    //     })();
+        // console.log(a); // it show an reference error // it show that a is not defined 
+
+
+
+        // for that we have a technique
+
+        var demo = (()=>{  // we declare a variable demo and put closure into it 
+            var a= "This is Ramayan";
+            var b=10;
+
+            return{
+            temp : a
+            };
+        })();
+
+        console.log(demo.temp); 
+
+        // this is a way we can access data from closures 
+
+        var demo = (()=>{  // we declare a variable demo and put closure into it 
+            var a= "This is Ramayan";
+            var b=10;
+
+            var sam = ()=>{
+                console.log("from yavatmal");
+            }
+            return{
+            temp : a,
+            temp2 : 
+            };
+        })();
+        console.log(demo.temp);
+        console.log(demo.temp2);
+
+
+        var sam = ( ()=>{
+            var name = "vaibhav";
+            var k = 10;
+            getdata()={   /// this is new type of function which is support in function
+                p=10
+            }
+            var abc = ()=>{
+                q = 10;
+            }
+            return{
+                sname : name,
+                sgetdata : getdata(){
+                },
+            }
+        })();
+    
+            </script>
+</body>
+</html>

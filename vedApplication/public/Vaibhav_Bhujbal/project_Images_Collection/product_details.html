@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 300px;
+            margin: auto;
+            background-color: #ccc;
+            padding: 10px;
+        }
+        li{
+            border: 1px solid black;
+            background-color: white;
+            padding: 10px;
+            margin:5px;
+            list-style-type: none;
+            /* text-align: center; */
+            object-fit: cover;            
+        }
+        ol{
+            padding: 15px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+       .ratingcontainer{
+        height: 40px;
+
+       }
+        .ratingcontainer div{
+            float: left;
+            background-image: url("ratingimg.png");
+            background-repeat: no-repeat;
+            width: 33px;
+             height: 30px;
+            background-size: cover;
+            padding: 2px;
+
+            /* background-size: cover; */
+            /* background-size: 10px 20px; */
+            /* background-repeat: no-repeat;
+            background-position: 10px 20px; */
+        }
+        .halfstar{
+            background-position: -41px 0px;
+        }   
+        .disablestar{
+            background-position: -84px 0px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="listitems">
+            <ol>
+                <li>Product name : laptop</li>
+                <li>product price <span class="aprice">$400</span><span class="dprice">$300</span></li>
+                <li>Manufacturer : Dell system</li>
+                <li>
+                    <div class="ratingcontainer">
+                        <div class="fullstar" ></div>
+                        <div class="halfstar"></div>
+                        <div class="disablestar"></div>
+                        <div class="disablestar"></div>
+                        <div class="disablestar"></div>
+                    </div>
+                </li>
+                <li class="imgli">
+                    <img src="laptopimage.jpg" alt="">
+                </li>
+            </ol>
+        </li>
+    </ul>
+    <script>
+        
+    </script>
+</body>
+</html> -->
+
+
+<!-- now we want all this dynamic with the help of javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="container">
+
+    </ul>
+    <script>
+        var productdetails = {
+            productname : "laptop",
+            produtprice : "$300",
+            manufacturer : "dell",
+            image :("f:01_UI_FULLSTACK_WEB_DEVELOPER\own_Study\laptopimage.jpg")
+        }
+
+        var litag = document.createElement("li");
+        litag.setAttribute("class", "listitems");
+    
+        var oltag = document.createElement("ol");
+        var li1 = document.createElement("li");
+        li1.innerText = "product name : ";
+        oltag.append(li1);
+
+        var li2 = document.createElement("li");
+        li2.innerText = "productprice : "
+        var spantag = document.createElement("span");
+        spantag.setAttribute("class", "aprice");
+        spantag.innerText =  " $300 ";
+        li2.append(spantag)
+
+        var spantag2 = document.createElement("span");
+        spantag2.setAttribute("class", "dprice");
+        spantag2.innerText = " $200 ";
+        li2.append(spantag2);
+        oltag.append(li2);
+
+        var li3 = document.createElement("li");
+        li3.innerText = "Manufacturer ";
+        oltag.append(li3);
+
+        
+        litag.append(oltag);
+        document.getElementById("container").append(litag);
+    </script>
+</body>
+</html>

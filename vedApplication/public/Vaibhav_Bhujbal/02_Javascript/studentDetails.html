@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sName   = prompt("Enter student name");
+        var sAge    = prompt("Enter student Age ");
+        var sRollNo = prompt("Enter student roll no");
+        var math    = prompt("Enter mathematics marks");
+        var bio     = prompt("Enter biology marks");
+        var chem    = prompt("Enter chemistry marks");
+
+            bio     = parseInt(bio);
+            math    = parseInt(math);
+            chem    = parseInt(chem);
+        
+        var totalMark   = (bio + math + chem);
+        var average     = (totalMark/300);
+        var percentage  = (totalMark/300)*100;
+        
+        console.log("Student name is " + sName);
+        console.log("Student age is " + sAge);
+        console.log("Student Roll No is " + sRollNo);
+        console.log("Marks of Math is " + math );
+        console.log("Marks of Biology is " + bio );
+        console.log("Marks of Chemistry is " + chem );
+        console.log("Total marks is " + totalMark );
+        console.log("Average is  " + average );
+        console.log("percentage is  " + percentage);
+
+        if(percentage > 35){
+        console.log("Welcome you are getting grade A " );
+            
+        }else{
+            console.log("Sorry you are getting fail" );
+            
+        }
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>

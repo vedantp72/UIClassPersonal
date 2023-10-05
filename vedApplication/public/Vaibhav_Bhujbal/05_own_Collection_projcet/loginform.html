@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style: none;
+            width: 400px;
+            height: 400px;
+            background-color: #ccc;
+            padding: 10px;
+            margin: 10px auto;
+
+        }
+        li{
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px;
+            background-color: antiquewhite;
+        }
+        h2{
+            text-align: center;
+            height: 10px;
+            padding: 0px;
+            margin: 10px;
+            line-height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>
+            <h2>User Login</h2>
+        </li>
+        <li>
+            <input type="text" placeholder="User name" id="li1">
+        </li>
+        <li>
+            <input type="password" placeholder="Password" id="li2">
+        </li>
+        <li>
+            <input type="button" value="LOGIN" id="li3" onclick="abc()">
+        </li>
+    </ol>
+
+    <script>
+        abc = ()=>{
+        var sample1 = document.querySelector("#li1").value;
+       var sample2 =  document.querySelector("#li2").value;
+       console.log(sample1);
+        console.log(sample2);
+        }
+
+        
+    </script>
+</body>
+</html>

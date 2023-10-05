@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       
+      var day=370;
+      
+      var y,m,w,d;
+
+      y=day/365;    // 370 y == 1
+      m=day%365;       //  370 == 5    
+      m=m/30;           // 5/30 m == 0
+      w=day%365;       //  370%365 ===5
+      w=w%30;               //     5 
+      w=w/7;     //   5/7  w === 0 
+      d=day%365;   // 5;
+      d=d%30;       //  5
+      d=d%7;    //  5%7    d ===  5
+                y=Math.round(y);
+                m=Math.round(m);
+                w=parseInt(w);
+                d=Math.round(d);
+
+      console.log(y+" Year "+m+" Month "+w+" Days "+d);
+
+
+
+   </script> 
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        .container1{
+            background-color: green;
+            z-index: 100;
+            position: relative;
+            top: 60px;
+            left: 40px; 
+            /* here we want to need both the container to be postion: realative */
+        }
+        .container2{
+            background-color: yellow;
+            z-index: 9; 
+            position: relative;
+            left: 150px;
+            top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="block container1">
+
+    </div>
+    <div class="block container2">
+
+    </div>
+</body>
+</html>

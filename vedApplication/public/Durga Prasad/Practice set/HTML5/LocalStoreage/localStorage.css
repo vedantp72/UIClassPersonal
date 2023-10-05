@@ -1,0 +1,38 @@
+.loginBlock {
+    border: 1px solid;
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+   
+}
+
+li {
+    margin: 20px;
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+label{
+    width: 150px;
+    float: left;
+}
+
+.detailsBlock {
+    display: none;
+    text-align: center;
+    color: yellow;
+    font-size: 20px;
+
+}
+
+.invalidCredentials {
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+.themeChooser{
+    text-align: right;
+    margin: 10px;
+}

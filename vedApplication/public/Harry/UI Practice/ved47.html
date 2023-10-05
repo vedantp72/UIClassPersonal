@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+</body>
+<script>
+    console.log("This is tutorial 53");
+    
+    function greet(name, greetText="Greetings from JavaScript"){
+        let name1 = "Name1";
+        console.log(greetText + " " + name);
+        console.log(name + " is a good boy");
+    }
+    function greet1(name, greetText="Greetings from JavaScript"){
+        let name1 = "Name1";
+        console.log(greetText + " " + name);
+        console.log(name + " is a good girl");
+    }
+    
+    function sum(a,b,c,d){
+        let e = a + b + c + d;
+        return e;
+        // This line will never execute (Unreachable code)
+        // console.log("Function is returned");
+    }
+    
+    
+    let name = "Divya";
+    let name1 = "Rushi";
+    let name2 = "Druv";
+    let name3 = "Ved";
+    let greetText1 = "Good Morning";
+    greet1(name, greetText1);
+    greet(name1, greetText1);
+    greet(name2, greetText1);
+    greet(name3, greetText1);
+    // let returnVal = greet(name3);
+    // console.log(returnVal);
+    
+    let returnVal = sum(1,2,3,4);
+    console.log(returnVal)
+    // console.log(name + " is a good girl");
+    // console.log(name1 + " is a good boy");
+    // console.log(name2 + " is a good boy");
+    // console.log(name3 + " is a good boy"); 
+    </script>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jsk Fitness centre</title>
+    <!--external css file-->
+    <script src="ved.js"></script> <!--external js file-->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="ved.css"> -->
+    <style>
+        body {
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+            color: rgb(187, 112, 112);
+            margin: 0px;
+            padding: 0px;
+            background: url('gym1.jpg');
+            /* background-position: center; */
+            height: 1000px;
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 20Px;
+        }
+
+        .left img {
+            width: 120px;
+        }
+
+        .left div {
+            /* border: 2px solid gold; */
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 60%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .navbar {
+           font-family: 'Baloo Bhai';
+            display: inline-block;
+        }
+
+        .navbar li {
+            color: rgb(183, 132, 132);
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: rgb(209, 169, 169);
+            text-decoration: none;
+            padding: 20px 20px;
+            font-size: 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai';
+            font-size: 22px;
+            margin: 0px 0px;
+            background-color: black;
+            color: white;
+            /* border: 2px solid yellowgreen; */
+            padding: 10px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(55, 55, 57);
+        }
+
+        .container {
+            /* border: 2px solid yellowgreen; */
+            margin: 50px 80px;
+            padding: 40px 2px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai';
+            font-size: 20px;
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 1px;
+            border: 2px solid yellowgreen;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+
+        h3 {
+            color: yellowgreen;
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        div.container {
+            position: sticky;
+            top: 60px;
+
+        }
+
+        header {
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+
+</head>
+
+<Body>
+    <header class="header">
+        <div class="left">
+            <img src="gymd.jpg" alt="">
+            <div>Jsk Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">WORKOUTS</a> </li>
+                <li><a href="#">PROGRAMS</a> </li>
+                <li><a href="#">HEALTHY LIVING</a> </li>
+                <li><a href="#">ABOUT</a> </li>
+                <li><a href="#">STORE</a> </li>
+                <li><a href="#">MEMBERSHIP</a> </li>
+        </div>
+        <div class="right">
+            <button class="btn">Contact us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>JOIN THE BEST GYM OF PUNE NOW</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR AGE">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR GENDER">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="ENTER YOUR ADDRESS">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
+</Body>
+
+</html>

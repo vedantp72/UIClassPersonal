@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /* border: 2px solid magenta; */
+        background-color: burlywood;
+        box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+
+
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green; */
+        /* box-shadow: 07px 05px 10px green; */
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -7px -10px 10px 34px mediumvioletred; */
+        /* box-shadow: inset 3px 5px rgb(201, 72, 201); */
+    }
+
+    h2 {
+        text-shadow: 3px 4px 2px rgb(226, 74, 170);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit ratione ex earum minima veniam
+                tempora impedit. Nesciunt libero atque unde nam hic saepe iste error ipsam ea quod officiis vel
+                quibusdam, corporis incidunt rerum eum enim reiciendis, ullam at repudiandae maiores. Repellendus
+                nesciunt sit libero nostrum beatae, similique fuga.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid itaque earum sint commodi nam,
+                recusandae eius praesentium at nisi, ex placeat. Culpa praesentium at quisquam, cum officia atque sunt
+                nisi fugiat optio adipisci iste aliquam autem soluta saepe animi delectus aperiam unde tempora! Sint at
+                autem natus, ratione vero provident.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus unde adipisci beatae minus saepe,
+                labore quod debitis asperiores quaerat voluptates deserunt corrupti at aliquam excepturi vero ullam
+                suscipit molestias soluta accusamus laborum voluptas quisquam molestiae non. Ipsam reprehenderit,
+                blanditiis asperiores nesciunt fugit minima error sunt? Consequuntur reiciendis sit officia perferendis!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

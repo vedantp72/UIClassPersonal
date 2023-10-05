@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHTML</title>
+</head>
+
+<body>
+    <h1 class="container"></h1>
+    <div class="container1">The Sum of Number is 
+        <span id ="Asum"></span>
+    </div>
+    <div class="container2">The Subtract of Number is 
+        <span class ="Bsub"></span>
+    </div>
+    <div class="container3">The Division of Number is 
+        <span id="Cdiv"></span>
+    </div>
+    <script>
+        let m1 = prompt('Enter the first Number')
+        let m2 = prompt('Enter the second Number')
+        m1 = parseInt(m1);
+        m2 = parseInt(m2);
+        let sum = m1 + m2;
+        let sub = m1 - m2;
+        let Division = m1 / m2
+        document.querySelector('span').innerText = sum;
+        document.querySelector('.Bsub').innerText = sub;
+        document.querySelector('#Cdiv').innerText = Division;
+        console.log(sum);
+        
+    </script>
+</body>
+
+</html>

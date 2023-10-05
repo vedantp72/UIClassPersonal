@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Demonstating Functions Parameters with default values
+    </title>
+</head>
+<body>
+    <script>
+        let addvalues = (a=15, b=5) =>{
+            let c = a + b;
+            console.log(c);
+        }
+        addvalues(25,35);
+        addvalues();
+        addvalues(65);
+        let startGame = (level="level1", Points = 0, Theme = "Default") =>{
+            console.log(level,Points,Theme);
+        }
+        startGame();
+        startGame("level5", 1000, "war");
+    </script>
+</body>
+</html>

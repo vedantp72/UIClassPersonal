@@ -1,0 +1,216 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    font-family: 'Baloo Bhai';
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(15, 14, 14);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+/* Navigation bar: logo and Image */
+#logo{
+    margin:34px 45px ;
+}
+
+#logo img{
+    height: 100px;
+    margin:3px 4px ;
+}
+
+
+/* Navigation Bar: List Styling */
+
+
+    
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(240, 235, 232);
+    display: block;
+    padding: 3px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(18, 228, 228);
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position:absolute;  
+    background: url('Mealmain.jpg') no-repeat center center;
+    height:100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{ 
+    padding: 1px;
+    color: rgb(28, 82, 24);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+#home p{
+    color: rgb(62, 32, 32);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+}
+/* Services section */
+#services{
+    margin: auto;
+    display: flex;
+}
+#services .box{
+    font-family: 'Baloo Bhai';
+    border: 2px solid brown;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#services.box img{
+    height: 160px;
+    writing-mode: 10px;
+    margin: auto;
+    display: block;
+
+}
+#services.box p{
+    font-size: 2.3rem;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url();
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 100px;
+}
+/* contact Section */
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url();
+
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box lable{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 150px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 1px;
+}
+.btn{
+
+    padding: 5px 20px;
+    border: 2px solid rgb(233, 143, 143);
+    background-color: rgb(146, 185, 192);
+    color: rgb(237, 224, 224);
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+} 
+.btn:hover{
+    background-color: rgb(150, 219, 89);
+
+}
+.center{
+    text-align: center;
+}

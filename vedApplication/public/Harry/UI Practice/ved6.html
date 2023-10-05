@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms tag</title>
+    This is HTML Page
+    <link rel="stylesheet" href="ved.css"> <!--external css file-->
+    <script src="ved.js"></script> <!--external js file-->
+</head>
+<body>
+    <p>
+        <strong>
+            This is HTML forms tag tutorial.
+        </strong>
+    </p>
+    <Form action="ved.js" method="get">
+        <label for="name">NAME:</label> 
+        <input type="text" Name="myname" id="name">
+        <br>
+        <br>
+        <div>
+            ROLE:<input type="text" Name="myRole">
+        </div>
+        <br>
+        <div>
+            EMAIL: <input type="email" Name="myEmail">
+        </div>
+        <br>
+        <div>
+            EXPERIENCE: <input type="number" name="MyExperience"> Years
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="MyGender">
+             Female <input type="radio" name="MyGender">
+             Other <input type="radio" name="MyGender">
+        </div>
+        <br>
+        <div>
+            <label for="Marrital status">MARRITAL STATUS:</label>
+            <select name="Marrital status" id="Marrital status">
+                <option value="Blank">----  </option>
+                <option value="Married">Married</option>
+                <option value="Unmarried">Unmarried</option>
+                <option value="Divorced">Divorced</option>
+            </select>
+         </div>
+         <br>
+        <div>
+           DATE: <input type="date" name="Mydate">
+         </div>
+         <br>
+         <label for="file">UPLOAD PHOTO:</label>
+         <input type="file" name="MyPhoto">
+         <br>
+         <div>
+           About Yourself:
+           <br>
+           <textarea name="Mytext" cols="40" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox"> Do you read the the terms and conditions
+        </div>
+       <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </Form>
+</body>
+</html>

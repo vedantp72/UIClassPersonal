@@ -1,0 +1,30 @@
+ul, #error {
+    list-style: none;
+    border: 1px solid;
+    width: 500px;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: azure;
+
+}
+.error{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
+}
+.result{
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+u{
+    color: red;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    background-color: aqua;
+}

@@ -1,0 +1,25 @@
+.rad1{
+background-image: radial-gradient(red, yellow);
+}
+.rad2{
+    background-image: repeating-radial-gradient(#ccc, red 10%, green 15%);
+}
+.rad3{
+    background-image: radial-gradient(yellow, blue, purple);
+}
+.rad4{
+    background-image: radial-gradient(green, orange, purple);
+}
+.rad5{
+    background-image: radial-gradient(yellow 10%, orange 15%, purple 20%, green, blue, violet, pink);
+
+}
+.rad6{
+    background-image: radial-gradient(yellow, orange, purple, green, blue);
+}
+.rad7{
+    background-image: radial-gradient(purple, aqua);
+}
+.rad8{
+    background-image: radial-gradient(aqua, purple);
+}

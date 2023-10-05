@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation in css</title>
+    This is HTML Page
+    <link rel="stylesheet" href="ved.css"> <!--external css file-->
+    <script src="ved.js"></script> <!--external js file--> 
+    <style>
+        .navbar{
+            background-color: rgb(72, 56, 56);
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; /* this is for removing underline */
+            color: white;
+        }
+        .navbar li button{
+            padding: 3px 3px;
+            text-decoration: none; /* this is for removing underline */
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .navbar li a:hover{
+            color: blue;
+        }
+        .navbar li button:hover{
+            color: blue;
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 1px 1px;
+            width: 180px;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#Services.html">About</a> </li>
+                    <li><button class="cmp-global-header__nav-menu-label-button" type="button" aria-label="Services">Services</button>
+                    
+                    <li><a href="#">Contact us</a> </li>
+                    <div class="search"> 
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+    </html>

@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ved.css">
+    <title>Before and After psuedo selectors</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            color: black;
+        }
+
+        header::before {
+
+            background: url('sun.jpg'), no-repeat center center;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .navigation {
+            font-family: 'Lobster', cursive;
+            font-size: 20px;
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            font-family: 'Lobster', cursive;
+            height: 344px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            font-family: 'Lobster', cursive;
+            font-size: 4rem;
+        }
+
+        p {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+        }
+
+        /* section::before {
+            content: "This is a Content"
+        } */
+
+        /* section::after {
+            content: "This is a Content"
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to UI code.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi consequuntur, delectus soluta assumenda
+            inventore quis accusantium deleniti dignissimos reiciendis odio sed tenetur id sapiente et temporibus
+            excepturi dolor ipsum necessitatibus Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
+            aliquam odio atque, vero vel aperiam voluptates recusandae ab eligendi dignissimos..</p>
+    </section>
+</body>
+
+</html>

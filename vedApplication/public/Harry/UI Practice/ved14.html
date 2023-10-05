@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Backgrounds in css</title>
+    This is HTML Page
+    <link rel="stylesheet" href="ved.css"> <!--external css file-->
+    <script src="ved.js"></script> <!--external js file-->
+    <style>
+        #firstpara{
+            color:orangered;
+            background-color:orange;
+            height: 100px;
+            width: 450px;
+            border-width: 4px;
+            border-color: red;
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color:white;
+            height: 100px;
+            width: 450px;
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            background-image:url("aaa.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 210px;
+        }
+        #thirdpara{
+            color:orangered;
+            background-color:green;
+            height: 100px;
+            width: 450px;
+            border-bottom: 2px solid;
+            border-top: 2px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>This is a heading</h3>
+    <p id="firstpara">This is a paragraph.</p>
+    <p id="secondpara">This is a second  paragraph.</p>
+    <p id="thirdpara"> This is third paragraph.</p>    
+</body>
+</html>

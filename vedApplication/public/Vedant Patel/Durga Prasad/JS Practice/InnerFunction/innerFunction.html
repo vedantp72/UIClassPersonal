@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerFunction</title>
+</head>
+
+<body>
+    <script>
+        let showMsg = () => {
+          var  a = 90;
+          console.log("A Value is " + a);
+          
+          let Msg = () => {
+             let b = 99;
+            console.log("B Value is " + b);
+            
+        }
+        Msg();
+          
+        }
+        
+        // Msg();
+        showMsg();
+        
+
+        //   console.log("B Value is " + b); you cannot access the value out side of the function
+
+    </script>
+</body>
+
+</html>

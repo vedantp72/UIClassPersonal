@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Ajax Comunication
+    </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../Jquery/Jquery/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        button {
+            color: red;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            color: green;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1px solid green" cellpadding="10px" cellspacing="10px">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Country</td>
+                <td>Launch Date</td>
+                <td>Mass</td>
+                <td>Launcher</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button onclick="getSateliteInfo()">Get Data</button>
+    <script>
+        let getSateliteInfo = () => {
+            var dataAPI = 'https://isro.vercel.app/api/customer_satellites';
+            // fetch(dataAPI).then((response) => response.json()).then((data) => {
+            //     console.log(data);
+            // })
+        
+       
+        axios.get('https://isro.vercel.app/api/customer_satellites')
+                .then(function (response) {
+                
+                    console.log(response);
+                    renderDataToTable(response.data.customer_satellites)
+                })
+                // .catch(function (error) {
+            
+                //     console.log(error);
+                // })
+                // .finally(function () {
+             
+                // });
+            }
+            let renderDataToTable = (data) => {
+                data.forEach((item) => {
+                    let trTag = $("<tr/>");
+                    let td1 = $("<td/>").text(item.id);
+                    trTag.append(td1);
+
+                    let td2 = $("<td/>").text(item.country);
+                    trTag.append(td2);
+                    
+                    let td3 = $("<td/>").text(item.launch_date);
+                    trTag.append(td3);
+                    
+                    let td4 = $("<td/>").text(item.mass);
+                    trTag.append(td4);
+                    
+                    let td5 = $("<td/>").text(item.launcher);
+                    trTag.append(td5);
+                    $("tbody").append(trTag);
+                });
+            }
+
+            </script>
+</body>
+
+</html>

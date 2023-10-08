@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Display FLex
+    </title>
+    <style>
+    .mainContainer{
+        display: flex;
+        height: 500px;
+        background-color: aquamarine;
+        /* align-items: center; */
+        
+    }
+    .mainContainer div{
+        border: 1px solid;
+        margin: 5px;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        background-color: aliceblue;
+    }
+    .child3{
+        /* order: 4; */
+        flex-grow: 2;
+    }
+</style>
+</head>
+<body>
+    <div class="mainContainer">
+   <div>Item1</div>
+   <div>Item2</div>
+   <div class="child3">Item3</div>
+   <div>Item4</div>
+   
+</div>
+</body>
+</html>

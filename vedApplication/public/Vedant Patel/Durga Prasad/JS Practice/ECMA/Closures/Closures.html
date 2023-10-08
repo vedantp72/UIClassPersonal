@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Closures.css">
+    <script src="Closures.js"></script>
+    <script src="lib/mathOperationsUtil.js"></script>
+
+    <title>
+        Closures
+    </title>
+</head>
+<body>
+    <ul>
+        <li>
+            Enter The First Value :
+            <input type="text" id="fav1">
+            
+        </li>
+        <li>
+            Enter The Second Value :
+            <input type="text" id="fav2">
+        </li>
+        <li>
+            <button class="sum" onclick="ShowResult('add')">GetSum</button>
+            <button class="sub" onclick="ShowResult('sub')">GetSub</button>
+            <button class="div" onclick="ShowResult('div')">GetDiv</button>
+            <button class="mul" onclick="ShowResult('mul')">GetMul</button>
+        </li>
+    </ul>
+    <div id="error">
+        <u>
+            <div id="result"></div>
+            <div id="count"></div>
+        </u>
+        
+    </div>
+</body>
+</html>

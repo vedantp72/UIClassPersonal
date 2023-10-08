@@ -2,7 +2,6 @@ let bookNames = [
     "The Alchemist",
     "The Wings of Fire",
     "Rich Dad Poor Daddy",
-
     "Untamed",
     "Beloved",
     "Principles",
@@ -31,10 +30,14 @@ let bookNames = [
             }
         }*/
         filterdBookList = bookNames.filter((bookName) => {
+            if (searchText.length == 0){
+
+            }else{
             let subStr = bookName.slice(0, searchText.length);
-            if (subStr == searchText){
+            if (subStr.toLowerCase() == searchText.toLowerCase()){
                 return bookName;
             }
+        }
         })
 
         console.log(filterdBookList);
@@ -58,6 +61,7 @@ let bookNames = [
             }*/
             
         filterdBookList.map((bookName) => {
+            
             let dTag = document.createElement("div");
              dTag.innerText = bookName;
              dTag.addEventListener("click",(event) => {

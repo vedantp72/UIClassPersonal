@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrayMap</title>
+</head>
+<body>
+    <script>
+        var categories =["Electronic", "Footwear", "Fashion"]
+        categories.splice(0,0, "Kids", "Toys")
+        categories.map(function(aaa){
+            document.write(`<a href="#">${aaa}</a><br>`)
+        });
+
+        var prices =[50000, 5000, 100000, 52000, 57000, 64000];
+       var result = prices.filter(function(val){
+            return val>55000;
+        })
+            document.write(result)
+            std = () => {
+                let stdData = {
+                    "Name": "Vedant",
+                    "RollNumber":72,
+                    "City": " Pune"
+                }
+                console.log(stdData);
+            }
+            std();
+
+            
+    </script>
+</body>
+</html>

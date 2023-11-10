@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class SBI_version1 {
+            constructor(){
+                
+            }
+            Personal = "Personal Banking";
+            NRI = "NRI Banking";
+            Print() {
+                document.write(`${this.Personal}<br> ${this.NRI}<br>`);
+            }
+        }
+        class SBI_version2 extends SBI_version1 {
+            Loans = "Personal, Car, Bike Loans";
+            Print() {
+                super.Print();
+                document.write(`${this.Loans}<br>`);
+
+            }
+        }
+        class SBI_version3 extends SBI_version2 {
+            Agri = "Govt. Schemes";
+            Print() {
+                super.Print();
+                document.write(`${this.Agri}`);
+            }
+        }
+        InstallClick = () => {
+            var ver = document.getElementById("versions").value;
+            var p = document.querySelector("p");
+            switch (ver) {
+                case "v1":
+                    let obj1 = new SBI_version1();
+                    obj1.Print();
+                    break;
+
+                case "v2":
+                    let obj2 = new SBI_version2();
+                    obj2.Print();
+                    break;
+
+                case "v3":
+                    let obj3 = new SBI_version3();
+                    obj3.Print();
+                    break;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend> Install Bank App</legend>
+        <select name="" id="versions">
+            <option value="">Select Version</option>
+            <option value="v1">SBI-Version1</option>
+            <option value="v2">SBI-Version2</option>
+            <option value="v3">SBI-Version3</option>
+        </select>
+        <button onclick="InstallClick()">Install</button>
+        <p></p>
+
+    </fieldset>
+</body>
+
+</html>

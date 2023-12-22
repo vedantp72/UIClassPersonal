@@ -7,11 +7,19 @@ import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {LoginComponent} from  './components/login/loginComponent.js';
+import {NetflixIndex} from './Netflix/Netflix-index/Netflix-index.js'
+import { DataBindingComponent } from './components/login/DataBinding/dataBindingComponent.js';
+import { DataBindingComponent2 } from './components/login/DataBinding/dataBindingComponent2.js';
+import { DataBindingComponent3 } from './components/login/DataBinding/dataBindingComponent3.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginComponent />
+    {<DataBindingComponent3/>}
+    {/* {<DataBindingComponent2/>} */}
+    {/* {<DataBindingComponent/>} */}
+    {/* <NetflixIndex /> */}
+    {/* <LoginComponent/> */}
   </React.StrictMode>
 );
 

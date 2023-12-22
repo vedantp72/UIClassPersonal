@@ -15,11 +15,11 @@ export function LoginComponent()
                 </div>
                 <div className='mb-2'>
                     <label className='form-label'>Password</label>
-                    <div className="mb-2">
+                    <div className="mb-3">
                         <input type="password" className='form-control' />
                     </div>
                 </div>
-                <div className='mb-2'>
+                <div className='mb-3'>
                     <button className="btn btn-primary w-100">Login</button>
                 </div>
             </form>

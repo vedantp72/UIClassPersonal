@@ -11,11 +11,14 @@ import {NetflixIndex} from './Netflix/Netflix-index/Netflix-index.js'
 import { DataBindingComponent } from './components/login/DataBinding/dataBindingComponent.js';
 import { DataBindingComponent2 } from './components/login/DataBinding/dataBindingComponent2.js';
 import { DataBindingComponent3 } from './components/login/DataBinding/dataBindingComponent3.js';
+import { TwoWayBinding } from './components/login/DataBinding/twoWayBinding.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {<DataBindingComponent3/>}
+
+    {<TwoWayBinding/>}
+    {/* {<DataBindingComponent3/>} */}
     {/* {<DataBindingComponent2/>} */}
     {/* {<DataBindingComponent/>} */}
     {/* <NetflixIndex /> */}
